@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fayaz H. Sahito</title>
+<meta name="description" content="Fayaz H. Sahito, Lab Instructor in Computer Science at Muhammad Ali Jinnah University, Karachi. Networks, cybersecurity and AI security.">
+<meta property="og:title" content="Fayaz H. Sahito">
+<meta property="og:description" content="Lab Instructor in Computer Science. Networks, cybersecurity and AI security.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='white'/><text x='50' y='72' font-size='68' text-anchor='middle' font-family='Georgia' font-style='italic'>F</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="net" aria-hidden="true"></canvas>
+<div class="prog" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <a class="brand" href="#top">Fayaz H. Sahito</a>
+  <nav aria-label="Primary"><a href="#about">About</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#lab">Lab</a><a href="#experience">Experience</a><a href="#education">Education</a></nav>
+</header>
+
+<main id="main">
+<section id="top" class="intro">
+  <h1>Fayaz H. Sahito</h1>
+  <p class="role">Lab Instructor, Department of Computer Science<br>Muhammad Ali Jinnah University, Karachi<br>M.S. candidate, Computer Science</p>
+  <p class="lead">I teach networking, cybersecurity and AI security through hands-on laboratories. My aim is simple: students should be able to build the systems they study, and understand how to defend them.</p>
+  <div class="stats" aria-label="At a glance">
+    <div><b data-n="8">8</b><span>courses taught</span></div>
+    <div><b data-n="10" data-s="+">10+</b><span>certifications</span></div>
+    <div><b data-n="3" data-s=" yrs">3 yrs</b><span>Cisco consulting</span></div>
+    <div><b>CCNA</b><span>trainer</span></div>
+  </div>
+  <div class="ticker" aria-hidden="true"><div><span>OSPF</span><span>BGP</span><span>EIGRP</span><span>RIP</span><span>IPv6</span><span>VLANs</span><span>Python</span><span>C++</span><span>RISC-V</span><span>Ethical Hacking</span><span>Malware Analysis</span><span>Cryptography</span><span>AI Security</span><span>Packet Tracer</span></div></div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I trained as a telecommunications engineer and spent three years advising clients on Cisco infrastructure before moving into teaching. That mix of industry practice and classroom work shapes how I design labs: every exercise begins with a problem engineers actually face, such as a misconfigured router, a weak firewall rule or a program that fails on an edge case.</p>
+  <p>I now lead practical sessions at university level while completing my Master's degree. My current interest is the security of machine learning systems, and how to prepare students to work on it.</p>
+</section>
+
+<section id="research">
+  <h2>Research interests</h2>
+  <ul class="list">
+    <li><b>AI security.</b> How machine learning systems fail, and practical ways to harden them.</li>
+    <li><b>Network security.</b> VLAN security, intrusion detection, firewalls and evasion techniques.</li>
+    <li><b>Malware analysis and cryptography.</b> Understanding threats in order to teach defence.</li>
+    <li><b>Routing and network design.</b> RIP, EIGRP, OSPF and BGP, with IPv4 and IPv6.</li>
+    <li><b>Computing education.</b> Laboratory design, practical assessment and feedback.</li>
+  </ul>
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <p>I deliver laboratory instruction across eight courses.</p>
+  <dl class="courses">
+    <dt>Data Communication and Networking</dt><dd>Routing protocols, IPv4 and IPv6, VLANs, DHCP, DNS, SSH, TCP and UDP.</dd>
+    <dt>Cybersecurity</dt><dd>Ethical hacking, cryptography, malware analysis and defensive thinking.</dd>
+    <dt>AI Security</dt><dd>Threats to machine learning systems and how to harden them.</dd>
+    <dt>Operating Systems</dt><dd>Processes, memory and scheduling, explored on live systems.</dd>
+    <dt>Computer Programming</dt><dd>Problem-solving in Python and C++.</dd>
+    <dt>RISC-V Assembly</dt><dd>How software meets hardware, one instruction at a time.</dd>
+    <dt>Digital Logic Design</dt><dd>Gates, circuits and the logic beneath every processor.</dd>
+    <dt>ICT Applications</dt><dd>Practical digital skills for students across disciplines.</dd>
+  </dl>
+  <h3>Teaching approach</h3>
+  <details><summary>Learn by building</summary><p>Students configure, program and test real systems in the lab. Theory arrives through the problem, not before it.</p></details>
+  <details><summary>Assess by doing</summary><p>Progress is measured through lab assignments, projects and practical exams, with individual feedback at each stage.</p></details>
+  <details><summary>Keep materials current</summary><p>I co-design exercises with faculty and update material as curricula and industry standards change, as I did when revising CCNA content after Cisco's certification updates.</p></details>
+  <details><summary>Support each student</summary><p>I mentor students individually toward their coursework and certification goals.</p></details>
+</section>
+
+<section id="lab">
+  <h2>Lab bench</h2>
+  <p>Small tools built around what I teach and study. Pick a category.</p>
+  <div class="tabs" role="group" aria-label="Tool categories"><button type="button" data-t="net">Networking</button><button type="button" data-t="sec">Security</button><button type="button" data-t="sys">Systems</button><button type="button" data-t="hw">Hardware</button></div>
+  <div class="tool" data-t="net"><h3>Subnet calculator</h3>
+    <div class="row"><input id="ip" value="192.168.10.0" inputmode="decimal" aria-label="IPv4 address"><input id="cidr" type="range" min="8" max="30" value="26" aria-label="Prefix length"><output id="pl">/26</output></div>
+    <dl id="sn"></dl></div>
+  <div class="tool" data-t="net"><h3>Traceroute simulator</h3>
+    <div class="row"><select id="proto" aria-label="Routing protocol"><option>OSPF</option><option>EIGRP</option><option>BGP</option><option>RIP</option></select><button id="trace" type="button">Run traceroute</button></div>
+    <pre id="tr" aria-live="polite">Pick a protocol and run it.</pre></div>
+
+  <div class="tool" data-t="net"><h3>IPv6 address expander</h3>
+    <div class="row"><input id="v6" value="2001:db8::1" spellcheck="false" aria-label="IPv6 address"></div><dl class="kv" id="v6o"></dl></div>
+  <div class="tool" data-t="net"><h3>Protocol and port lookup</h3>
+    <div class="row"><input id="pq" placeholder="Search: ssh, 443, bgp, dns" aria-label="Search protocol or port"></div><pre class="out scroll" id="po"></pre></div>
+  <div class="tool" data-t="sec"><h3>Hash generator</h3>
+    <div class="row"><input id="hin" value="hello" aria-label="Text to hash"><select id="halg" aria-label="Hash algorithm"><option>SHA-256</option><option>SHA-512</option><option>SHA-1</option></select></div>
+    <pre class="out" id="hout"></pre><p class="note">The same input always gives the same hash, and changing one character changes the whole result. SHA-1 is included for teaching only; it is no longer collision-resistant.</p></div>
+  <div class="tool" data-t="sec"><h3>Password entropy estimator</h3>
+    <div class="row"><input id="pw" value="correct horse battery" autocomplete="off" spellcheck="false" aria-label="Sample password"></div><dl class="kv" id="pwo"></dl>
+    <p class="note">Entropy = length × log₂(size of character pool). This assumes random characters, so passwords built from common words or patterns are weaker than shown. Do not type a real password.</p></div>
+  <div class="tool" data-t="sys"><h3>CPU scheduling simulator</h3>
+    <div class="row"><input id="bt" value="5 3 8 6" aria-label="Burst times separated by spaces"><select id="alg" aria-label="Algorithm"><option value="fcfs">FCFS</option><option value="sjf">SJF (non-preemptive)</option><option value="rr">Round Robin</option></select><input id="qt" type="number" min="1" value="2" aria-label="Round Robin time quantum"></div>
+    <pre class="out" id="so"></pre><p class="note">Enter burst times for P1, P2 and so on. All processes arrive at time 0, so turnaround time = completion time and waiting time = turnaround − burst.</p></div>
+  <div class="tool" data-t="hw"><h3>Number base converter</h3>
+    <div class="row"><input id="nb" value="202" spellcheck="false" aria-label="Number"><select id="nbs" aria-label="Input base"><option value="10">Decimal</option><option value="2">Binary</option><option value="16">Hexadecimal</option><option value="8">Octal</option></select></div><dl class="kv" id="nbo"></dl></div>
+  <div class="tool" data-t="hw"><h3>Logic gate explorer</h3>
+    <div class="row"><select id="gt" aria-label="Gate"><option>AND</option><option>OR</option><option>NAND</option><option>NOR</option><option>XOR</option><option>XNOR</option></select><label><input type="checkbox" id="ga"> A = 1</label><label><input type="checkbox" id="gb"> B = 1</label></div><pre class="out" id="go"></pre></div>
+  <div class="tool" data-t="hw"><h3>RISC-V (RV32I) instruction decoder</h3>
+    <div class="row"><input id="rv" value="00A28293" spellcheck="false" aria-label="32-bit instruction in hexadecimal"></div><dl class="kv" id="rvo"></dl>
+    <p class="note">Decodes the RV32I base integer instructions from 8 hex digits. Example: 00A28293.</p></div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <details open><summary><b>Lab Instructor</b>, Muhammad Ali Jinnah University<span>Dec 2025 to present</span></summary>
+    <ul><li>Lead lab sessions and co-design exercises and assignments with faculty.</li><li>Give individual feedback and assess students through projects and practical exams.</li><li>Maintain lab equipment and software; contribute to curriculum improvements and departmental meetings.</li></ul></details>
+  <details><summary><b>Trainer</b>, Cisco Networking Academy, Karachi<span>Jul 2024 to Nov 2024</span></summary>
+    <ul><li>Built and taught CCNA courses with lectures, labs and assessments.</li><li>Ran hands-on labs in Cisco Packet Tracer and on real equipment.</li><li>Mentored students toward certification and updated materials as Cisco changed its syllabus.</li></ul></details>
+  <details><summary><b>Technical Consultant</b>, ICT Global Pvt, Islamabad<span>Aug 2021 to Nov 2024</span></summary>
+    <ul><li>Matched client requirements to Cisco solutions and delivered demonstrations and briefings.</li><li>Supported sales teams with technical answers and proposals.</li><li>Wrote solution briefs and client reports; fed customer needs back to the product team.</li></ul></details>
+  <details><summary><b>Intern</b>, Pakistan Broadcasting Corporation, Karachi</summary>
+    <ul><li>Operated TV and radio production equipment and worked across teams on live events.</li></ul></details>
+</section>
+
+<section id="education">
+  <h2>Education and academic training</h2>
+  <dl class="courses">
+    <dt>M.S. Computer Science</dt><dd>Muhammad Ali Jinnah University, Karachi. Spring 2025 to present.</dd>
+    <dt>B.E. Telecommunications Engineering</dt><dd>Faculty of Engineering and Technology, University of Sindh.</dd>
+    <dt>CCNA: Routing and Switching</dt><dd>Cisco Networking Academy.</dd>
+  </dl>
+  <h3>Professional certifications</h3>
+  <p class="small"><b>Security.</b> Certified Ethical Hacker (CEH). Penetration Testing and Ethical Hacking. Ethical Hacking: Cryptography. Ethical Hacking: Evading IDS, Firewalls and Honeypots. Advanced Malware Analysis: Redux. Ethics in Cybersecurity. Cybersecurity Foundations. Career Essentials in Cybersecurity (Microsoft and LinkedIn).</p>
+  <p class="small"><b>Networking.</b> CCNA, Cisco Certified Network Associate (SMIT).</p>
+  <p class="small"><b>Programming.</b> Advanced Algorithmic Thinking with Python.</p>
+  <h3>Technical skills</h3>
+  <p class="small">Python, C++, RISC-V Assembly, HTML, CSS, JavaScript, machine learning, routing protocols (RIP, EIGRP, OSPF, BGP), IPv4 and IPv6, router and switch configuration, VLAN security, DHCP, DNS, Telnet, SSH, TCP and UDP.</p>
+</section>
+
+<section id="now">
+  <h2>Right now</h2>
+  <p>Teaching in the lab, studying for my Master's, and learning how to secure AI.</p>
+</section>
+</main>
+<footer><p>© <span id="y">2026</span> Fayaz H. Sahito. Karachi, Pakistan.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
